@@ -18,7 +18,7 @@ a + a + a {
 }
 
 body {
-    background-image: url("assets/Background.jpg");
+    background-image: url("assets/Background2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -130,7 +130,7 @@ nav {
     align-items: center;
     width: 1200px;
     border-style: solid;
-    opacity: 0.6;
+    opacity: 0.8;
     background-color: black;
     padding: 10px;
 }

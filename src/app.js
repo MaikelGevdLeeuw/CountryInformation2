@@ -17,6 +17,14 @@ button.addEventListener("click", function(event) {
     void fetchData(input.value);
     //Clear the input from HTML.
     input.value = "";
+    //clearing poem
+    const aElement = document.getElementById("a");
+    const bElement = document.getElementById("b");
+    aElement.innerHTML = "";
+    bElement.innerHTML = "";
+
+
+
 });
 //Using the enterkey to search and call fetchDataFunction
 input.addEventListener("keydown", function(event) {
@@ -26,6 +34,11 @@ input.addEventListener("keydown", function(event) {
         void fetchData(input.value);
         //Clear the input from HTML.
         input.value = "";
+        //clearing poem
+        const aElement = document.getElementById("a");
+        const bElement = document.getElementById("b");
+        aElement.innerHTML = "";
+        bElement.innerHTML = "";
     }
 });
 
@@ -54,6 +67,39 @@ async function fetchData(input){
                 text = "languages"
             }
 
+
+
+            //Set background according to region
+            const AFRICA = "https://images.pexels.com/photos/3581847/pexels-photo-3581847.jpeg";
+            const ASIA = "https://images.pexels.com/photos/3560166/pexels-photo-3560166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+            const EUROPE = "https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+            const AMERICAS = "https://images.pexels.com/photos/37646/new-york-skyline-new-york-city-city-37646.jpeg";
+            const OCEANIA = "https://images.pexels.com/photos/13327947/pexels-photo-13327947.jpeg";
+            const ANTARCTICA = "https://images.pexels.com/photos/48178/mountains-ice-bergs-antarctica-berg-48178.jpeg";
+
+            let region = country.region.toUpperCase();
+            switch (region) {
+                case "AFRICA":
+                    document.body.style.backgroundImage = `url('${AFRICA}')`;
+                    break;
+                case "ASIA":
+                    document.body.style.backgroundImage = `url('${ASIA}')`;
+                    break;
+                case "EUROPE":
+                    document.body.style.backgroundImage = `url('${EUROPE}')`;
+                    break;
+                case "AMERICAS":
+                    document.body.style.backgroundImage = `url('${AMERICAS}')`;
+                    break;
+                case "OCEANIA":
+                    document.body.style.backgroundImage = `url('${OCEANIA}')`;
+                    break;
+                case "ANTARCTICA":
+                    document.body.style.backgroundImage = `url('${ANTARCTICA}')`;
+                    break;
+                default:
+                    break;
+            }
 
             //No flag because it does not fit the style of the website.
             const curr = Object.values(country.currencies)[0].name;

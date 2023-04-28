@@ -71,7 +71,7 @@ async function fetchData(input){
 
             //Set background according to region
             const AFRICA = "https://images.pexels.com/photos/3581847/pexels-photo-3581847.jpeg";
-            const ASIA = "https://images.pexels.com/photos/3560166/pexels-photo-3560166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+            const ASIA = "https://images.pexels.com/photos/1637788/pexels-photo-1637788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
             const EUROPE = "https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
             const AMERICAS = "https://images.pexels.com/photos/37646/new-york-skyline-new-york-city-city-37646.jpeg";
             const OCEANIA = "https://images.pexels.com/photos/13327947/pexels-photo-13327947.jpeg";

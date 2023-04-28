@@ -17,6 +17,16 @@ button.addEventListener("click", function(event) {
     void fetchData(input.value);
     input.value = "";
 });
+//Using the enterkey to search
+input.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        //Preventing the browser from refreshing
+        event.preventDefault();
+        void fetchData(input.value);
+        input.value = "";
+    }
+});
+
 
 
 //Fetch data
